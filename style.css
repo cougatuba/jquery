@@ -1,0 +1,124 @@
+
+body{
+	margin: 0 auto;
+	background-color:#042037;
+}
+
+#content{
+	
+}
+
+.wrapper{
+	margin: 0 auto;
+	width:1000px;
+	height:100%;
+	background-color:#29506D;
+}
+
+.header{
+	background-color:white;
+	margin: 0 auto;
+	padding: 5px;
+	border: solid 5px #496D89;
+	text-align:center;
+	width:200px;
+}
+
+.main{
+	padding: 5px;
+	border: solid 5px;
+	position:relative;
+}
+
+.footer{
+	background-color:white;
+	position:absolute;
+	padding: 5px;
+	bottom:0;
+	width:500px;
+}
+
+.poster{
+	padding: 5px;
+	width:50%;
+	float:left;
+	position:inline;
+	
+}
+
+.hints{
+	background-color:white;
+	float:right;
+	padding:5px;
+	width:45%;
+	margin-top:6px;
+	margin-right:5px;
+	position:inline;
+	height:270px;
+}
+
+.guessing{
+		padding-left:5px;
+}
+
+#endGame{
+	background-color:white;
+	position:absolute;
+	top:285px;
+	left:0;
+	width:100%;
+	display:inline;
+	text-align:center;
+	z-index:1;
+}
+
+#instructions{
+	background-color:white;
+	position:absolute;
+	top:285px;
+	left:0;
+	width:100%;
+	display:inline;
+	text-align:center;
+	z-index:1;
+}
+
+#skipAnswer{
+	color:white;
+}
+
+#guessing{
+	margin: 0 auto;
+	
+}
+
+
+#score{
+	visibility:hidden;
+}
+
+
+#movCAST{
+	visibility:hidden;
+}
+
+#movCHAR{
+	visibility:hidden;
+}
+
+#movSYN{
+	visibility:hidden;
+}
+
+#movID{
+	visibility:hidden;
+}
+
+#movTITS{
+	left:-1550000px;
+	display:none;
+	visibility:hidden;
+}
+
+
+

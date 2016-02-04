@@ -1,0 +1,92 @@
+<html>
+<head>
+<link rel="stylesheet" type="text/css" href="style.css">
+
+<script src="https://code.jquery.com/jquery-1.10.2.js"></script>
+<script src="scripts.js"></script>
+</head>
+
+<body>
+	<div class="wrapper">
+			
+		<div id="endGame">
+		<br><br><br><br>
+		<h3>Thank you for playing! Enter a new set of years to play again!</h3>
+		<br><br><br><br><br><br><br><br><br><br><br><br><br>
+		</div>
+		
+		<div id="instructions">
+			<div id="content">
+			<br><br><br><br>
+			<p>Welcome to Guess the Movie! where we find out how well you know your movies.</p>
+			<p>The game is simple, you will be able to select a range of years and will have to 
+				guess movies that were released during that time period. </p>
+			<p>You will then be shown a movie still from a random movie and will have to guess the title 
+				of the film. If you aren't sure what movie it is feel free to ask for a hint.</p>
+			<p> Hint #1 reveals the main three actors. Hint #2 reveals what roles they played. Hint #3
+				reveals the plot of the film. </p>
+			<p>If you still can't guess it after all three hints, feel free 
+				to skip to the next round! There are 5 rounds total and points are awarded for guessing 
+				the movie without using hints.</p>
+			<br><br><br><br><br><br><br><br>
+			</div>
+		</div>
+		
+		<div class="header">
+			<h2>Guess the Movie!</h2>
+			<div id="years">
+				<p>Enter a range of years</p>
+				<form>
+				<input type="text" id="yearLo" value="1990" autocomplete="off" size=2>
+				-
+				<input type="text" id="yearHi" value="2016" autocomplete="off" size=2>
+				<input type="button" id="yearSub" value="Submit">
+			</div>
+			
+			<div id="score">
+				<h3 id="points">Points: 0</span>
+				<h3 id="round">Round: 0/5</span>
+			</div>
+		</div>
+
+		<div class="guessing">
+			<div id="content">
+				<br>
+				<form>
+				<input type="text" id="movieTitle" value="" autocomplete="off">
+				<input type="button" id="guessButt" value="Guess">
+				</form>
+				<span id="skipAnswer"></span>
+			</div>
+		</div>
+		
+		<div class="poster">
+			<div id="content">
+				<img id="backdrop" src="http://image.tmdb.org/t/p/w500/c2Ax8Rox5g6CneChwy1gmu4UbSb.jpg">
+			</div>
+		</div>
+		
+		<div class="hints">
+			<input type="button" id="hints3" value="Hint #1">
+			<input type="button" id="hints2" value="Hint #2">
+			<input type="button" id="hints1" value="Hint #3">
+			<input type="button" id="skip" value="Skip">
+			
+			<div id="answers">	
+				<span id="movCAST">Cast</span><br>
+				<span id="movCHAR">Crew</span><br>
+				<span id="movSYN">Synopsis</span><br>
+				<span id="movID">12</span>
+			</div>
+		</div>
+
+	 <span id="movTIT" style="display:none">title</span>
+		<div class="footer">
+			<div id="content">
+			Created by : Jonathan Sanborn | API Provided By :  <a href="https://www.themoviedb.org">The Movie DB</a>
+			</div>
+		</div>
+	</div>	
+	
+</body>
+</html>
